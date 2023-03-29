@@ -1,8 +1,38 @@
 .about-component{
-    font-family: 'Nanum Gothic Coding';
+    
+    padding-top: 100px;
 
 }
 
 .about-title{
     color:rgb(10, 238, 181);
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    font-family: 'Nanum Gothic Coding';
+}
+
+.about-component h1{
+    font-size: 70px;
+    padding-bottom: 20px;
+    color:rgb(8, 47, 66);
+    font-family:sans-serif;
+    font-weight: light;
+    
+}
+.about-component h2{
+    font-size: 70px;
+    font-family:sans-serif;
+    font-weight: light;
+    color: rgb(54, 164, 137);
+    padding-bottom: 40px;
+}
+
+.about-me{
+    max-width: 500px;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size: large;
+    color: rgb(13, 178, 219);
 }
