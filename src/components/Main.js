@@ -5,6 +5,8 @@ import Typed from 'react-typed';
 
 
 
+
+
 function Main(){
     const [text, setText] = useState("")
     const [fullText, setFullText] = useState(
