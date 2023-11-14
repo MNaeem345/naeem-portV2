@@ -1,0 +1,98 @@
+.entire-footer{
+    height: auto;
+    background-color: rgba(12, 16, 36, 0.937);
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+.github-button2{
+    height: 60px;
+    color: rgb(7, 203, 252);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30px;
+    font-family: 'Nanum Gothic Coding';
+    margin: 0.5rem auto;
+    padding: 0;
+    justify-content: center;
+
+}
+
+.github-button2:hover{
+    
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.365);
+    cursor: pointer;
+}
+
+.container2{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color:rgba(255, 249, 249, 0);
+    display: block;
+}
+
+.container2 > *{
+    padding: 1rem;
+}
+
+@media(min-width:768px){
+    .container2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.linkedin-button2{
+    height: 60px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30px;
+    font-family: 'Nanum Gothic Coding';
+    margin: 0.5rem auto;
+    color: rgb(7, 203, 252);
+    
+    justify-content: center;
+}
+
+.linkedin-button2:hover{
+    
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.365);
+    cursor: pointer;
+}
+.rights{
+    padding-bottom: 20px;
+    color: rgb(7, 203, 252);
+    font-family: 'Nanum Gothic Coding';
+    
+}
+
+.project-button{
+    height: 60px;
+    width: 70%;
+    border-radius: 9px;
+    border: none;
+    font-size: 15px;
+    margin: 0.5rem auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    box-shadow: 12px -12px 9px rgba(0, 0, 0, 0.2);
+    border-radius:8px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 255, 234, 0);
+    color: rgb(10, 238, 181);
+    border-color: rgb(10, 238, 181);
+    
+    font-family: 'Nanum Gothic Coding';
+    
+}
+
+.project-button:hover{
+    transform: scale(1.1);
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}

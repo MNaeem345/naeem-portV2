@@ -1,0 +1,33 @@
+
+.ab-me{
+    color:rgb(157, 173, 249);
+    display: flex;
+    font-size: 40px;
+    font-family:sans-serif;
+    font-weight: light;
+    padding-top: 250px;
+}
+
+.ab-me::after{
+    content: "";
+    display: block;
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgb(10, 238, 181);
+}
+
+.ab-desc{
+    display: flex;
+
+    font-size: 22px;
+    color: rgb(155, 161, 162);
+    font-family:sans-serif;
+    font-weight: lighter;
+    max-width: 700px;
+    padding-top: 30px;
+}

@@ -26,7 +26,7 @@ function Main(){
 
     const [text2, setText2] = useState("")
     const [fullText2, setFullText2] = useState(
-        "Mohammed Naeem"
+        "Mohammed Naeem."
   )
     const [index2, setIndex2] = useState(0)
     useEffect(() => {
@@ -44,7 +44,7 @@ function Main(){
         <Container maxWidth='md' className='about-component'>
             
             <p className='about-title'>{text}</p>
-            <h1>{text2}</h1>
+            <h1 className='name'>{text2}</h1>
             
             <h2><Typed 
                 strings={["I love developing.",

@@ -1,39 +1,149 @@
-
-
-.nav-bar{
-    list-style-type: none;
-    display:flex;
-    align-items:right;
-    justify-content:end;
-    font-size: 17px;
-    font-family: 'Nanum Gothic Coding';
-    
-    padding:30px;
+.navbar {
+  
+  
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px;
+  
+  
+  
+  font-size: 15px;
+  font-family:sans-serif;
+  font-weight: lighter;
+  margin-top: 20px;
+  
+  
+  
 }
+
+
+.nav-container{
+  background-color: rgba(18, 24, 53, 0.842);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index:9999;
+  height: 100px;
   
-  li a {
-      color: rgb(7, 203, 252);
-      text-decoration: none;
-      padding: 25px;
-      
+}
+
+
+
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  margin-left: auto;
+}
+.navbar-toggle.open {
+  
+  transform: rotate(180deg);
+}
+.navbar-toggle.open {
+  color: rgb(0, 255, 234); 
+  transform:rotate(720deg);
+  transition: 3s;
+  
+
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+      display: none;
     }
+  }
+.navbar-toggle:hover{
+  color: rgb(0, 255, 234);
+}
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  justify-content:right;
+}
+.navbar-links {
+  align-items: center;
+
+}
+.navbar-links li {
+  margin: 0;
+  font-family: 'Nanum Gothic Coding';
   
-  a:hover {
-    color: rgb(10, 238, 181);
+}
+
+.navbar-links a {
+  font-weight: bold;
+  color: rgb(7, 203, 252);
+  text-decoration: none;
+  
+}
+.navbar-links a:hover {
+  color: rgb(0, 255, 234);
   }
 
-
-  .nav{
-    
-    height:30px;
+@media (max-width: 768px) {
+  .navbar-links {
+    opacity: 0;
+    overflow: hidden;
+    transition: height 2s ease, opacity 1s ease;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
     width: 100%;
-    position:fixed;
-    top:0;
-    transition-timing-function: ease-in;
-    transition:1.0s;
-  
+    height:300px;
+    backdrop-filter: blur(50px);
+  }
+
+  .navbar-links.open {
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(13, 20, 57, 0.942);
+    backdrop-filter: blur(50px);
+    
+   
+  }
+  .navbar-links.open li{
+    margin-left:20px ;
+    
+    background: none;
+  }
+  .resume-button.open{
+    margin-right: 0;
+  }
 }
 
-.nav__blue{
-    background-color:rgba(151, 36, 36, 0);
+.resume-button{
+  background-color: rgba(0, 255, 234, 0);
+  color: rgb(10, 238, 181);
+  padding: 5px;
+  border-radius:8px;
+  border-color: rgb(10, 238, 181);
+  border-style: solid;
+  border-width: 1px;
+  height: 40px;
+  width: 80px;
+  font-family: 'Nanum Gothic Coding';
+  font-size: 15px;
+  margin-right: 20px;
 }
+
+.resume-button:hover{
+  background-color: rgba(10, 240, 163, 0.232);
+  cursor: pointer;;
+}
+
+
+
