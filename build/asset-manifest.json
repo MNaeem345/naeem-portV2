@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e2e029b.css",
+    "main.js": "/static/js/main.ed9f9078.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/cryptoview.mp4": "/static/media/cryptoview.d5155df62327705534d7.mp4",
+    "static/media/pokeshop.mp4": "/static/media/pokeshop.b22b75b33f8fe3022150.mp4",
+    "static/media/weatherapp.mp4": "/static/media/weatherapp.f479ca790095a47294fd.mp4",
+    "static/media/todoapp.mp4": "/static/media/todoapp.26ad23e9c4950400b69c.mp4",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/index.html",
+    "main.7e2e029b.css.map": "/static/css/main.7e2e029b.css.map",
+    "main.ed9f9078.js.map": "/static/js/main.ed9f9078.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e2e029b.css",
+    "static/js/main.ed9f9078.js"
+  ]
+}

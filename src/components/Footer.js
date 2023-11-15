@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <div>
                 <p className='rights'>@ 2023 Mohammed Naeem. All Rights Reserved</p>
-                <a href="https://github.com/MNaeem345/colabv2" target="_blank"><button className="project-button" >View This Projects Repository</button></a>
+                <a href="https://github.com/MNaeem345/naeem-portV2" target="_blank"><button className="project-button" >View Repository</button></a>
                 </div>
             </div>
         </section>

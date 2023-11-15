@@ -41,6 +41,7 @@ function Main(){
            
 
     return (
+        
         <Container maxWidth='md' className='about-component'>
             
             <p className='about-title'>{text}</p>

@@ -19,6 +19,7 @@
     height: 1px;
     margin-left: 20px;
     background-color: rgb(10, 238, 181);
+    z-index: -9999;
 }
 
 .ab-desc{

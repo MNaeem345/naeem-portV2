@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0%;
     
+    
+}
+
+.others{
+    z-index: -9999;
 }
 
 *{
