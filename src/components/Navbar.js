@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../components/Navbar.css';
 import logo from '../assets/naeem4.png';
+import resume from '../assets/Mohammed Naeem Resume (16).pdf'
 
 
 
@@ -83,7 +84,7 @@ const Navbar = () => {
                 <li className={`navbar-li ${isOpen ? 'open' : ''}`} onClick={closeNavbar}><a href="#experience" onClick={() => handleSmoothScroll("experience")}>{`Experiences/>`}</a></li>
                 <li className={`navbar-li ${isOpen ? 'open' : ''}`} onClick={closeNavbar}><a href="#projects" onClick={() => handleSmoothScroll("projects")}>{`Projects/>`}</a></li>
                 <li className={`navbar-li ${isOpen ? 'open' : ''}`} onClick={closeNavbar}><a href="#contact" onClick={() => handleSmoothScroll("contact")}>{`Contact Me/>`}</a></li>
-                <a href="#" onClick={closeNavbar}><button className="resume-button">
+                <a href={resume} target="_blank" onClick={closeNavbar}><button className="resume-button">
                     Resume
                 </button></a>
             </ul>

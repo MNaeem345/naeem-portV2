@@ -16,8 +16,10 @@ function About() {
 		    I am still learning new languages and frameworks to keep myself updated with current trends 
 			in the industry. 
             
-            My Professional experience includes work as a software engineer at Coding Temple in the 
-            past and as a data analyst intern at Sunfield Advisors currently, 
+            My Professional experience includes work as a software engineer at Coding Temple and a Front-End
+            Developer with Co.Lab where I was able to to showcase my Front-End capabilities by creating 
+            a mobile application that allows the user to track the amount of time they spend outside walking. I am currently working
+             as a data analyst intern at Sunfield Advisors, 
             demonstrating proficiency in Flask, React, database administration, and project management.
             
         </p>

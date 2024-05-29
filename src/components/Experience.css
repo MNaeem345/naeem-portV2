@@ -1,11 +1,12 @@
 .experiences-card{
     padding-bottom: 20px;
     font-family:sans-serif;
-    
-
+    display: flex;
+    max-width: min-content;
 }
 .desc{
     padding-bottom:10px;
+    max-width: 650px;
 }
 .MuiCard-root {
     margin-bottom: 30px;
@@ -64,4 +65,60 @@
 
 .MuiPaper-rounded {
     border-radius: 14px;
+}
+
+
+
+
+/* Experience.css */
+
+.tabs-content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.experiences-cards {
+    margin-left: 20px; /* Adjust this margin as needed */
+    margin-bottom: 20px; /* Adjust this margin as needed */
+}
+
+/* Add any other styles as needed */
+.tabs-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .tabs-horizontal {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tabs-horizontal .MuiTabs-scroller {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+    }
+
+    .tabs-horizontal .MuiTab-root {
+        flex: 1;
+        text-align: center;
+    }
+
+    .tabs-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs-container {
+        order: -1; /* Move tabs to the top */
+    }
 }

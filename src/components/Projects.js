@@ -12,6 +12,7 @@ import cryptoview from "../assets/cryptoview.mp4";
 import pokeshop from "../assets/pokeshop.mp4";
 import todo from "../assets/todoapp.mp4";
 import weather from "../assets/weatherapp.mp4";
+import timeout from "../assets/timeout.mp4";
 
 function Projects() {
   return (
@@ -41,6 +42,14 @@ function Projects() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
+        <SwiperSlide className='carousel'>
+          <video src={timeout} alt="slide_image" autoPlay controls className='vid2' />
+          <h1 className='proj-title'>TimeOut-</h1>
+          <p className='proj-description'>Constructed a mobile application using React Native that tracks the users time spent outside and allows the user to record their time and save it in a database so that the user can have a analytical view of their progress in terms of time as well as view their highest current streak that they have been walking and taking a TimeOut.
+
+</p>
+            <a href="https://github.com/MNaeem345/CryptoView" target="_blank"><button className='button2'>Github</button></a>
+        </SwiperSlide>
         <SwiperSlide className='carousel'>
           <video src={cryptoview} alt="slide_image" autoPlay controls className='vid1' />
           <h1 className='proj-title'>Crypto View</h1>
