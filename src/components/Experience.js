@@ -34,6 +34,7 @@ function Experience() {
                     <div className="tabs-content">
                         <div className={`tabs-container ${isSmallScreen ? 'tabs-horizontal' : 'tabs-vertical'}`}>
                             <Tabs
+                                TabIndicatorProps={{style: {background:'green'}}}
                                 orientation={isSmallScreen ? 'horizontal' : 'vertical'}
                                 variant="scrollable"
                                 value={currentTabIndex}

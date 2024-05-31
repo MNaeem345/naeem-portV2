@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../components/Navbar.css';
 import logo from '../assets/naeem4.png';
-import resume from '../assets/Mohammed Naeem Resume (16).pdf'
+import resume from '../assets/Mohammed Naeem Resume (17).pdf'
 
 
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     const targetElement = document.getElementById(targetId);
   
     if (targetElement) {
-      const offsetTop = targetElement.getBoundingClientRect().top +150;
+      const offsetTop = targetElement.getBoundingClientRect().top +100;
       const start = window.pageYOffset;
       const duration = 1000; // Adjust the duration as needed
       let startTime = null;
