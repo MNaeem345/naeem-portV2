@@ -69,3 +69,25 @@
     background-color: rgba(10, 240, 163, 0.232);
     cursor: pointer;
   }
+
+  .email-btn:disabled {
+    background-color: rgba(177, 174, 174, 0.24);
+    cursor: not-allowed;
+  }
+
+
+
+  .notification {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.712);
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }
+  
+  .notification.error {
+    background-color: rgba(255, 0, 0, 0.712);
+    font-family: sans-serif;
+  }

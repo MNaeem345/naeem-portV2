@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/Contact.css';
 import { Container, Card } from '@material-ui/core';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
@@ -9,6 +9,18 @@ function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [notification, setNotification] = useState('');
+    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+    useEffect(() => {
+      // Enable the button only if all fields are filled
+      if (name && email && message) {
+        setIsButtonDisabled(false);
+      } else {
+        setIsButtonDisabled(true);
+      }
+    }, [name, email, message]);
+  
   
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -29,14 +41,24 @@ function Contact() {
       // Send the email using EmailJS
       emailjs.send(serviceId, templateId, templateParams, publicKey)
         .then((response) => {
+          if (response.status === 200) {
+            setNotification('Email sent successfully!');
+          } else {
+            setNotification('Failed to send email, please send email to mohammednaeem345@gmail.com');
+          }
           console.log('Email sent successfully!', response);
           setName('');
           setEmail('');
           setMessage('');
         })
         .catch((error) => {
+          setNotification('Failed to send email, please send email to mohammednaeem345@gmail.com');
           console.error('Error sending email:', error);
         });
+
+        setTimeout(() => {
+          setNotification('');
+        }, 5000);
     }
   
 
@@ -50,6 +72,7 @@ function Contact() {
     </Container>
     <Container maxWidth="xs">
     <Card className='form-card'>
+    {notification && <div className='notification'>{notification}</div>}
     <form onSubmit={handleSubmit} className='emailForm'>
         <input
           type="text"
@@ -74,7 +97,7 @@ function Contact() {
           className='email-msg'
         >
         </textarea>
-        <button type="submit" className='email-btn'>Send Email</button>
+        <button type="submit" className='email-btn' disabled={isButtonDisabled}>Send Email</button>
       </form>
       </Card>
     </Container>
