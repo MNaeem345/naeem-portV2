@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import '@fortawesome/fontawesome-free/css/all.css';
 import '../components/Navbar.css';
 import logo from '../assets/naeem4.png';
-import resume from '../assets/Mohammed Naeem Resume (17).pdf'
+import resume from '../assets/Resume-Mohammed Naeem..pdf'
 
 
 
